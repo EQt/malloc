@@ -11,3 +11,10 @@ Aligned Allocation
 - Part of C++11 in the [`memory`](https://en.cppreference.com/w/c/memory/aligned_alloc) header.
 - Probably calls either the Windows equivalent [`_aligned_malloc`](https://msdn.microsoft.com/en-us/library/8z34s9c6.aspx) or one of the
 - [POSIX](https://www.gnu.org/software/libc/manual/html_node/Aligned-Memory-Blocks.html) variants like `aligned_alloc` or `memalign`
+
+
+Prefetching
+-----------
+
+Indeed there are some functions to [control the cache](https://en.wikipedia.org/wiki/Cache_control_instruction), like the
+`__builtin_prefetch` in GCC (also available in Clang).
