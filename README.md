@@ -18,3 +18,6 @@ Prefetching
 
 Indeed there are some functions to [control the cache](https://en.wikipedia.org/wiki/Cache_control_instruction), like the
 `__builtin_prefetch` in GCC (also available in Clang).
+
+### Automatic Prefetching
+"In recent times [...] application processor designs from Intel and ARM devote more transistors to accelerating [...] performing automatic prefetch, with hardware to detect linear access patterns on the fly"
