@@ -21,3 +21,15 @@ Indeed there are some functions to [control the cache](https://en.wikipedia.org/
 
 ### Automatic Prefetching
 "In recent times [...] application processor designs from Intel and ARM devote more transistors to accelerating [...] performing automatic prefetch, with hardware to detect linear access patterns on the fly"
+
+
+
+Buffer Protocol
+===============
+
+This is not directly related to memory allocation.
+However, the issue of providing low level access to memory, appeared in many situations, namely PyBind11, 
+[PyArrow](http://arrow.apache.org/docs/python/memory.html) or for 
+[saving memory in Python](https://eli.thegreenplace.net/2011/11/28/less-copies-in-python-with-the-buffer-protocol-and-memoryviews).
+All of them make use of the
+[Python Buffer Protocol](https://docs.python.org/3/c-api/buffer.html#bufferobjects).
