@@ -50,6 +50,14 @@ versus
 std::unique_ptr<char[]> a (new char[256])
 ```
 
+std::make_shared
+---------------
+
+... is useful for what?
+
+1. Shorter notation
+2. Combines the `new` operation of the `std::shared_ptr` and the underlying object.
+
 
 Address Sanitization
 ==================
