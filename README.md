@@ -50,3 +50,10 @@ versus
 std::unique_ptr<char[]> a (new char[256])
 ```
 
+
+Address Sanitization
+==================
+
+TODO: How does it work?
+Integrate an example...
+
