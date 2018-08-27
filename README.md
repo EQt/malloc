@@ -33,3 +33,20 @@ However, the issue of providing low level access to memory, appeared in many sit
 [saving memory in Python](https://eli.thegreenplace.net/2011/11/28/less-copies-in-python-with-the-buffer-protocol-and-memoryviews).
 All of them make use of the
 [Python Buffer Protocol](https://docs.python.org/3/c-api/buffer.html#bufferobjects).
+
+
+C++
+===
+
+Some of the ownership ideas of Rust are already implemented in the header
+[`memory`](https://mbevin.wordpress.com/2012/11/18/smart-pointers), though there are a lot of 
+[pitfalls](http://www.acodersjourney.com/2016/05/top-10-dumb-mistakes-avoid-c-11-smart-pointers/) in using them correctly.
+For instance
+```c++
+std::unique_ptr<char> a (new char[256])
+```
+versus
+```c++
+std::unique_ptr<char[]> a (new char[256])
+```
+
